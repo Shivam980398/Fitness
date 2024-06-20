@@ -115,6 +115,16 @@
  {
     .heading{
         margin: 50px 8px;
+        width: 100%;
+        padding-top: 0px;
+    }
+ }
+ @media(max-width:334px)
+ {
+    .heading{
+        margin: 70px 8px;
+        width: 100%;
+        padding-top: 0px;
     }
  }
         
@@ -135,8 +145,18 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
-  }    
-  
+  }   
+   
+  @media(max-width:340px){
+      #parent{
+        margin-top: 50px;
+      }
+  }
+  @media(max-width:305px){
+      #parent{
+        margin-top: 70px;
+      }
+  }
         .div1 {
            
             height: auto;
@@ -170,12 +190,14 @@
     <div class="navbar">
         <legend class="logo">FITNESS</legend>
        <div class="rightNav"> <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
         <a href="contact.html">Contact us</a>
     </div>
     </div>
     <br>
+    <div class="heading"> <h1>"Unlock Your <span class="span1">Fitness</span> Potential," "Get Fit, Feel Great!"</h1></div>
+    <br><br><br>
     <div id="parent">
     <div class="div1">
         <form id="form">
@@ -190,7 +212,7 @@
             <br>
             <input type="tel" id="Phone no." class="cls" placeholder="Phone No.">
             <br>
-            <input type="date" style="padding: 1px 29px;" id="date" class="cls" placeholder="Date of Birth">
+            <input type="date" style="padding: 1px 29px; color: rgb(113, 117, 117);" id="date" class="cls" placeholder="Date of Birth">
             
            <p>I agree to the TOS <input type="checkbox"></p>
           

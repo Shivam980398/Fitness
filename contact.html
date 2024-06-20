@@ -126,9 +126,33 @@
   .span1:hover{
       color: blue;
   }
+  .contact{
+    height: 100%;
+    width: 80%;
+    margin-left: 80px;
+    /* border: 1px solid blueviolet; */
+    
+  }
+  fieldset {
+    height: 350px;
+    border-color: rgb(9, 222, 222);
+     /* box-shadow: 5px 5px 5px rgb(22, 3, 231);  */
+     background-color: rgb(10, 10, 10);
+  }
+  legend{
+    color: rgb(6, 231, 69); font-weight: bold;
+  }
+  label{
+    margin-left: 15px;
+    color: rgb(42, 144, 165);
+  }
+  option{
+    color: grey;
+  }
     </style>
 </head>
 <body>
+<div class="main">
   <div class="navbar">
     <legend class="logo">FITNESS</legend>
    <div class="rightNav"> <a href="index.html">Home</a>
@@ -138,11 +162,12 @@
 </div>
 </div>
 <br><br><br><br>
-    <form>
-        <fieldset style="border-color: rgb(204, 238, 238); box-shadow: 5px 5px 5px rgb(192, 222, 222); background-color: rgb(187, 187, 201);">
-          <legend style="color: rgb(10, 37, 34); font-weight: bold;">Contact Form</legend>
+  <div class="contact">
+     <form  >
+        <fieldset >
+          <legend>Contact Form</legend>
         <label for="name">Name</label>
-        <input type="text" id="name" name="nam" placeholder="Full name...">
+        <input type="text" class="formElem" id="name" name="nam" placeholder="Full name...">
         <br>
         <label for="email">Email id</label>
         <input type="email" placeholder="Example@.com">
@@ -164,19 +189,21 @@
         <br>
         <label for="subject">Select your favourite player:</label>
   
-        <select name="subject" id="subject">
+        <select name="subject" id="subject" style="color: grey;">
           <option value="player 1">player 1</option>
           <option value="player 2">player 2</option>
           <option value="player 3">player 3</option>
         </select>
         <br>
         <label for="adr">Address:</label>
-        <input id="adr" name="adr" style="width:100%;height:150px;" placeholder="Your address.."></textarea>
+        <input id="adr" name="adr" style="width:100%;height:120px; border: 1px solid grey;" placeholder="Your address.."></textarea>
         <br>
   
-        <input type="submit" id="register">
+        <input type="submit" id="register" style=" width: 30%; height: 13%; margin-top:10px; margin-left: 300px; color: aliceblue; background-color: rgb(6, 113, 236); align-self: center;">
       </form>
     </fieldset>
+  </div>
+</div>
     <script src="form.js"></script>
 </body>
 </html>

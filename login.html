@@ -117,6 +117,14 @@
         margin: 50px 8px;
     }
  }
+ @media(max-width:334px)
+ {
+    .heading{
+        margin: 70px 8px;
+        width: 100%;
+        padding-top: 0px;
+    }
+ }
         
  .span1{
       color: rgb(3, 75, 51);
@@ -126,19 +134,43 @@
   .span1:hover{
       color: blue;
   }
+    
+  #parent{
+    height: 250px;
+    width: auto;
+    margin-top: 20px;
+    /* margin: 40px 50px 0px 450px; */
+    /* border: 1px solid white; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }    
+  @media(max-width:340px){
+      #parent{
+        margin-top: 50px;
+      }
+  }
+  @media(max-width:305px){
+      #parent{
+        margin-top: 70px;
+      }
+  }
+  .div1 {
+           
+           height: auto;
+           width: 200px;
+           border: 1px solid black;
+           box-shadow: 5px 10px 5px rgb(40, 145, 117);
+           box-shadow: 0px 5px 5px rgb(40, 145, 117);
+           /* background-color: blanchedalmond; */
+           align-self: center;
+       }
         
-        .div1 {
-            margin: 100px 100px 100px 450px;
-            height: auto;
-            width: 200px;
-            border: 1px solid black;
-            box-shadow: 5px 15px 5px rgb(180, 173, 173) ; 
-            background-color: blanchedalmond;
-        }
         #form{
             padding-bottom: 5px;
         }
         form[id=form]{
+            align-self: center;
             margin:0px;
             padding: 5px 15px 5px 15px;
         }
@@ -159,12 +191,15 @@
     <div class="navbar">
         <legend class="logo">FITNESS</legend>
        <div class="rightNav"> <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
         <a href="contact.html">Contact us</a>
     </div>
     </div>
     <br>
+    <div class="heading"> <h1>"Unlock Your <span class="span1">Fitness</span> Potential," "Get Fit, Feel Great!"</h1></div>
+    <br>
+    <div id="parent">
     <div class="div1">
         <form id="form">
             
@@ -179,6 +214,7 @@
             <input type="submit" style="padding: 1px 62px;" id="register" placeholder="Login">
           </form>
     </div>
+</div>
     <script src="form.js"> </script>
 </body>
 </html>
