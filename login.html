@@ -5,54 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .navbar{
-            
-            height: auto;
-            width: 95%;
-            margin-left: 25px;
-            border: 1px solid black;
-            background-color: rgb(99, 228, 194);
-            position: fixed;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: space-between;
-           
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+
         }
-        .rightNav{
-           
-            margin-top: 10px;
-            height: auto;
-          
-            
+        html,body{
+            width: 100%;
+            height: 100%;
         }
+  .navbar{  
+      height: auto;
+      width: 95%;
+      margin-left: 25px;
+      border: 1px solid rgb(83, 83, 83);
+      background-color: rgb(32, 30, 30);
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-between;
+    }
+  .logo{
+      margin-top: 5px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      color: white;
+      background-color: rgb(32,30,30);
+     
+  }
+  .logo:hover{
+      transform: scale(1.05);
+  }
+  .rightNav{
+    background-color: rgb(32, 30, 30);
+  }
+  a {       
+      margin-top: 10px;
+      height: auto;
+      margin-right: 30px;
+      padding: 2px 2px;
+      text-decoration: none;
+      color: antiquewhite;
+      background-color: rgb(32,30,30);
+     }
+  a:hover{
+        color: rgb(255, 255, 255);
+    }
+ @media(max-width:798.992px)
+  { 
+   .navbar{
+       margin-left: 6px;
+       margin-right: 0px;
+   }
+  .rightNav{
+      width: auto;
+      height: auto;
+      display: flex;
+      margin-right: 2px;
+   }
+       
+ }
+     
+  @media(min-width:798.992px) and (max-width:2140px)
+   { 
+  .rightNav{    
+       height: auto;
+       display: flex;
+     }
+    .a{
+       margin-left: 10px;      
+       padding: 2px 2px;
+       }
+  }
+
+ .heading{
+       
+       height: 25px;
+       width: 90%;
+       margin-top: 20px;
+       margin-left: 45px;
+       padding: 5px;
+       /* border: 1px solid rgb(0, 162, 40); */
+       background-color: black;
+       color: rgb(26, 183, 12);
+       font-size: 15px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       position: fixed;
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       justify-content: center;
       
-    a{
-            margin-right: 30px;
-            padding: 2px 2px;
-            text-decoration: none;
-            
-        }
-     @media(max-width:798.992px)
-        { 
-     .rightNav{
-             height: auto;
-             display: flex;
-          }
-          
-       }
-       @media(min-width:798.992px) and (max-width:2140px)
-        { 
-            .rightNav{
-           
-            height: auto;
-            display: flex;
-          }
-           .a{
-            margin-left: 10px;
-            padding: 2px 2px;
-            }
-       }
+   }
+   @media(max-width:832px) { 
+      .heading{font-size: 10px;
+       height: auto;
+       width: 90%;  
+       margin: 25px 4px 50px 15px;
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       justify-content: center;
+    }}
+    @media(max-width:419px)
+ {
+    .heading{
+        margin: 50px 8px;
+    }
+ }
+        
+ .span1{
+      color: rgb(3, 75, 51);
+      cursor: pointer;
+      transition: 0.3s ease;
+  }
+  .span1:hover{
+      color: blue;
+  }
         
         .div1 {
             margin: 100px 100px 100px 450px;
@@ -84,7 +157,7 @@
 </head>
 <body>
     <div class="navbar">
-        <legend style="margin-top: 5px; margin-left: 15px;">FITNESS</legend>
+        <legend class="logo">FITNESS</legend>
        <div class="rightNav"> <a href="index.html">Home</a>
         <a href="#">About</a>
         <a href="#">Blog</a>
