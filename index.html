@@ -1,149 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: black;
-
-        }
-        html,body{
-            width: 100%;
-            height: 100%;
-        }
-  .navbar{  
-      height: auto;
-      width: 95%;
-      margin-left: 25px;
-      border: 1px solid rgb(83, 83, 83);
-      background-color: rgb(32, 30, 30);
-      position: fixed;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: space-between;
-    }
-  .logo{
-      margin-top: 5px;
-      margin-left: 15px;
-      cursor: pointer;
-      transition: 0.3s ease;
-      color: white;
-      background-color: rgb(32,30,30);
-     
-  }
-  .logo:hover{
-      transform: scale(1.05);
-  }
-  .rightNav{
-    background-color: rgb(32, 30, 30);
-  }
-  a {       
-      margin-top: 10px;
-      height: auto;
-      margin-right: 30px;
-      padding: 2px 2px;
-      text-decoration: none;
-      color: antiquewhite;
-      background-color: rgb(32,30,30);
-     }
-  a:hover{
-        color: rgb(255, 255, 255);
-    }
- @media(max-width:798.992px)
-  { 
-   .navbar{
-       margin-left: 6px;
-       margin-right: 0px;
-   }
-  .rightNav{
-      width: auto;
-      height: auto;
-      display: flex;
-      margin-right: 2px;
-   }
-       
- }
- @media(max-width:334px)
- {
-    a{
-       font-size: 12px;
-        padding-top: 0px;
-    }
- }
-     
-  @media(min-width:798.992px) and (max-width:2140px)
-   { 
-  .rightNav{    
-       height: auto;
-       display: flex;
-     }
-    .a{
-       margin-left: 10px;      
-       padding: 2px 2px;
-       }
-  }
-
- .heading{
-       
-       height: 25px;
-       width: 90%;
-       margin-top: 20px;
-       margin-left: 45px;
-       padding: 5px;
-       /* border: 1px solid rgb(0, 162, 40); */
-       background-color: black;
-       color: rgb(26, 183, 12);
-       font-size: 15px;
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-       position: fixed;
-       display: flex;
-       flex-wrap: wrap;
-       align-content: center;
-       justify-content: center;
-      
-   }
-   @media(max-width:843px) { 
-      .heading{font-size: 10px;
-       height: auto;
-       width: 90%;  
-       margin: 25px 4px 50px 15px;
-       display: flex;
-       flex-wrap: wrap;
-       align-content: center;
-       justify-content: center;
-    }}
-    @media(max-width:419px)
- {
-    .heading{
-        margin: 50px 8px;
-    }
- }
- @media(max-width:334px)
- {
-    .heading{
-        margin: 70px 8px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+      }
+      html,
+      body {
         width: 100%;
-        padding-top: 0px;
-    }
- }
-        
- .span1{
-      color: rgb(3, 75, 51);
-      cursor: pointer;
-      transition: 0.3s ease;
-  }
-  .span1:hover{
-      color: blue;
-  }
+        height: 100%;
+      }
+      .navbar {
+        height: auto;
+        width: 95%;
+        margin-left: 25px;
+        border: 1px solid rgb(83, 83, 83);
+        background-color: rgb(32, 30, 30);
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+      }
+      .logo {
+        margin-top: 5px;
+        margin-left: 15px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        color: white;
+        background-color: rgb(32, 30, 30);
+      }
+      .logo:hover {
+        transform: scale(1.05);
+      }
+      .rightNav {
+        background-color: rgb(32, 30, 30);
+      }
+      a {
+        margin-top: 10px;
+        height: auto;
+        margin-right: 30px;
+        padding: 2px 2px;
+        text-decoration: none;
+        color: antiquewhite;
+        background-color: rgb(32, 30, 30);
+      }
+      a:hover {
+        color: rgb(255, 255, 255);
+      }
+      .mode {
+        height: 20px;
+        width: 50px;
+        border-radius: 10px;
+        position: sticky;
+        /* margin-right: 10px; */
+        border: 2px solid black;
+        background-color: grey;
+        background-image: url("night.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
 
-    .panel {
-        
+      /* .mode:hover {
+        background-image: url("day.png");
+        background-position: left;
+      } */
+      @media (max-width: 798.992px) {
+        .navbar {
+          margin-left: 6px;
+          margin-right: 0px;
+        }
+        .rightNav {
+          width: auto;
+          height: auto;
+          display: flex;
+          margin-right: 2px;
+        }
+      }
+      @media (max-width: 334px) {
+        a {
+          font-size: 12px;
+          padding-top: 0px;
+        }
+
+        .mode {
+          height: fit-content;
+          margin-top: 0px;
+          width: auto;
+          font-size: 12px;
+        }
+      }
+
+      @media (min-width: 798.992px) and (max-width: 2140px) {
+        .rightNav {
+          height: auto;
+          display: flex;
+        }
+        .a {
+          margin-left: 10px;
+          padding: 2px 2px;
+        }
+      }
+
+      .heading {
+        height: 25px;
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 45px;
+        padding: 5px;
+        /* border: 1px solid rgb(0, 162, 40); */
+        background-color: black;
+        color: rgb(26, 183, 12);
+        font-size: 15px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+      }
+      @media (max-width: 843px) {
+        .heading {
+          font-size: 10px;
+          height: auto;
+          width: 90%;
+          margin: 25px 4px 50px 15px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+        }
+      }
+      @media (max-width: 419px) {
+        .heading {
+          margin: 50px 8px;
+        }
+      }
+      @media (max-width: 334px) {
+        .heading {
+          margin: 70px 8px;
+          width: 100%;
+          padding-top: 0px;
+        }
+      }
+
+      .span1 {
+        color: rgb(3, 75, 51);
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      .span1:hover {
+        color: blue;
+      }
+
+      .panel {
         margin: 10px;
         margin-top: 30px;
         padding: 10px;
@@ -151,7 +169,7 @@
         height: auto;
         border-top: 1px solid white;
         border-radius: 0px;
-        background-color:rgb(9, 10, 10) ;
+        background-color: rgb(9, 10, 10);
         box-shadow: 5px 10px 5px rgb(40, 145, 117);
         box-shadow: 0px 5px 5px rgb(40, 145, 117);
         display: flex;
@@ -162,114 +180,126 @@
         cursor: pointer;
         animation: floatImage 1s ease-in-out infinite;
         transition: 0.5s ease;
-}
-.panel:hover {
-     box-shadow: 5px 10px 5px rgb(248, 71, 6);
-     box-shadow: 0px 5px 5px  #09bfdf;
-  }
+      }
+      .panel:hover {
+        box-shadow: 5px 10px 5px rgb(248, 71, 6);
+        box-shadow: 0px 5px 5px #09bfdf;
+      }
 
-        /* justify-content: space-between; */
-  @media(max-width: 750px){
-      .panel{
-          
+      /* justify-content: space-between; */
+      @media (max-width: 750px) {
+        .panel {
           margin-top: 80px;
           padding-top: 5px;
           display: flex;
           flex-direction: column;
+        }
       }
-  }
-     .image{
-        background-color: rgb(9,10,10);
-     }  
-  .image img{
-     width: 300px;
-     height: 250px;
-     justify-self: flex-start;
-     background-color: rgb(9,10,10);
-     box-shadow: 5px 10px 5px rgb(9,10,10);
-     box-shadow: 0px 5px 5px  rgb(9,10,10);
-     
-     cursor: pointer;
-     animation: floatImage 4s ease-in-out infinite;
-     transition: 0.4s ease;
-   }  
-   .image img:hover {
-     box-shadow: 5px 10px 5px rgb(61, 116, 7);
-     box-shadow: 0px 5px 5px rgb(26, 183, 12);
-  }
-   
-   .registerPanel {
-       
+      .image {
+        background-color: rgb(9, 10, 10);
+      }
+      .image img {
+        width: 300px;
+        height: 250px;
+        justify-self: flex-start;
+        background-color: rgb(9, 10, 10);
+        box-shadow: 5px 10px 5px rgb(9, 10, 10);
+        box-shadow: 0px 5px 5px rgb(9, 10, 10);
+
+        cursor: pointer;
+        animation: floatImage 4s ease-in-out infinite;
+        transition: 0.4s ease;
+      }
+      .image img:hover {
+        box-shadow: 5px 10px 5px rgb(61, 116, 7);
+        box-shadow: 0px 5px 5px rgb(26, 183, 12);
+      }
+
+      .registerPanel {
         width: auto;
         padding-top: 25px;
         color: #09bfdf;
         text-align: center;
-        font-size:  auto;
+        font-size: auto;
         /* border: 1px solid white; */
-        background-color:rgb(9, 10, 10) ;
-     
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(9, 10, 10);
+
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         align-self: center;
         justify-self: center;
-       
-    
-   }
-   @media(max-width:995){
-        .registerPanel{
-            margin-left: 50px;
-            
-        }
-
-   }
-   @media(max-width:255px){
-      img{
-       height: 200px;
-       width:200px;
       }
-   }
-  
-   
-   button{
-    height: 30px;
-    width: 80px;
-    border-radius: 10px;
-    margin-right: 10px;
-    color: rgb(3, 75, 51);
-    border:2px solid  #09bfdf;
-} 
-   
-   button:hover{
-    background-color:  #09bfdf;
-}
-  
+      @media (max-width: 995) {
+        .registerPanel {
+          margin-left: 50px;
+        }
+      }
+      @media (max-width: 255px) {
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+
+      .btn {
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+        margin-right: 10px;
+        color: rgb(3, 75, 51);
+        border: 2px solid #09bfdf;
+      }
+
+      .btn:hover {
+        background-color: #09bfdf;
+      }
     </style>
-</head>
-<body style="margin: 0px;">
+  </head>
+  <body>
     <div class="navbar">
-        <legend class="logo">FITNESS</legend>
-       <div class="rightNav"> <a href="index.html">Home</a>
+      <legend class="logo">FITNESS</legend>
+      <div class="rightNav">
+        <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#blog">Blog</a>
         <a href="contact.html">Contact us</a>
+        <button
+          class="mode"
+          onclick="window.location.href='https:/shivam980398.github.io/project2/'"
+        >
+          <!-- Day -->
+        </button>
+      </div>
     </div>
+    <br />
+    <div class="heading">
+      <h1>
+        "Unlock Your <span class="span1">Fitness</span> Potential," "Get Fit,
+        Feel Great!"
+      </h1>
     </div>
-    <br>
-    <div class="heading"> <h1>"Unlock Your <span class="span1">Fitness</span> Potential," "Get Fit, Feel Great!"</h1></div>
-    <br>
+    <br /><br />
     <div class="panel">
-        <div class="image" >
-             <img src="image.png" alt="fitness" ></div>
+      <div class="image">
+        <img src="image.png" alt="fitness" />
+      </div>
 
-             <div class="registerPanel">
-                <h1 style="margin: 0px 40px;">Welcome to Fitness</h1>
-                <h2 style="color: rgb(3, 98, 162);">Please register Yourself or Login</h2>
-                <br>
-                <button class="Signup"  onclick="window.location.href='signup.html'">Signup</button>
-                <button class="Login" onclick="window.location.href='login.html'">Login</button>
-             </div>
-        <!-- </div>  -->
-        
+      <div class="registerPanel">
+        <h1 style="margin: 0px 40px">Welcome to Fitness</h1>
+        <h2 style="color: rgb(3, 98, 162)">
+          Please register Yourself or Login
+        </h2>
+        <br />
+        <button class="btn Signup" onclick="window.location.href='signup.html'">
+          Signup
+        </button>
+        <button class="btn Login" onclick="window.location.href='login.html'">
+          Login
+        </button>
+      </div>
+      <!-- </div>  -->
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</body>
+    <div class="content"></div>
+
+    <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+  </body>
 </html>
